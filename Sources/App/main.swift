@@ -37,6 +37,10 @@ drop.get("/") { request in
     return try drop.view.make("welcome.html")
 }
 
+drop.get("demo") { request in
+    return try drop.view.make("demo.html")
+}
+
 /**
     Return JSON requests easy by wrapping
     any JSON data type (String, Int, Dict, etc)
